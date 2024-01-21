@@ -1,0 +1,41 @@
+.facility {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: var(--background-secondary);
+}
+
+.facility > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.facility__title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.facility__list {
+  margin-bottom: 2rem;
+}
+
+.facility__img img {
+  height: 100%;
+  width: auto;
+}
+
+.facility__list li {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.facility__list__order {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--secondary);
+}
+
+.facility__list__item h6 {
+  margin-bottom: 0.4rem;
+}

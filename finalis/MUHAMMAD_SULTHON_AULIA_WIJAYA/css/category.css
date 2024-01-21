@@ -1,0 +1,23 @@
+.category {
+  background-color: var(--primary);
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.category__title {
+  font-size: 3rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.category__desc {
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.category__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}

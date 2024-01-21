@@ -1,0 +1,371 @@
+head, body {
+    font-family: 'Open Sans', sans-serif;
+}
+.nav {
+    padding-left: 50px;
+}
+.active {
+    background-color: rgb(98, 47, 0 );
+    color: white;
+}
+.active:hover {
+    background-color: rgb(244, 158, 113);
+    color: white;
+}
+ul {		
+    list-style-type: none;
+    transition-duration: 0.5s;
+    margin: 0;
+    padding: 10px 15px;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+}
+li {
+    float: right;
+}
+li a {
+    display: block;
+    border-radius: 10px;
+    color: rgb(98, 47, 0 );
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition-duration: 0.5s;
+    cursor: pointer;  
+}
+li a:hover {
+    background-color: rgb(98, 47, 0 );
+    color: white;
+}
+ img {
+    width:200px;
+}      
+.jumbotron {
+    padding: 50px 50px;
+    background-color: rgb(252, 192, 162);
+}
+.jumbotron h1 {
+    color:  rgb(231, 124, 66);
+}
+.jumbotron p {
+    color: rgb(98, 47, 0 );;
+}
+.jumbotron a {
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    background-color:  rgb(98, 47, 0 );
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition-duration: 0.5s;
+    cursor: pointer;  
+}
+.jumbotron a:hover {
+    background-color: rgb(244, 158, 113);
+    color: white;
+}
+/* .jumbotron img {
+
+} */
+.sponsor {
+    background-color:  rgb(98, 47, 0 );
+    padding: 75px 120px;
+}
+.sponsor h1 {
+    text-align: center;
+    color: white;
+}
+.sponsor img {
+    padding: 30px 15px;
+}
+.kelas {
+    background-color:  rgb(244, 158, 113);
+    padding: 75px 120px;
+}
+.kelas h1 {
+    padding-left: 20px;
+}
+.kerja {
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    padding: 30px 10px;
+}
+.kerja a {
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    background-color:  rgb(98, 47, 0 );
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition-duration: 0.5s;
+    cursor: pointer;  
+}
+.kerja a:hover {
+    background-color: rgb(244, 158, 113);
+    color: white;
+}
+.pelatihan {
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    padding: 30px 10px;
+}
+.pelatihan a {
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    background-color:  rgb(98, 47, 0 );
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition-duration: 0.5s;
+    cursor: pointer;  
+}
+.pelatihan a:hover {
+    background-color: rgb(244, 158, 113);
+    color: white;
+}
+.beasiswa {
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    padding: 30px 10px;
+}
+.beasiswa a {
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    background-color:  rgb(98, 47, 0 );
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition-duration: 0.5s;
+    cursor: pointer;  
+}
+.beasiswa a:hover {
+    background-color: rgb(244, 158, 113);
+    color: white;
+}
+.latihan {
+    padding: 10px 10px;
+    background-color: rgb(255, 255, 255);
+}
+/* .latihan img {
+    width: 400px;
+} */
+.tersedia {
+    background-color: rgb(244, 158, 113);
+}
+.android {
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    padding: 30px 10px;
+}
+.android img{
+    background-color:  rgb(98, 47, 0 );
+    border-radius: 50%;
+}
+.android a {
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    background-color:  rgb(98, 47, 0 );
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition-duration: 0.5s;
+    cursor: pointer;  
+}
+.android a:hover {
+    background-color: rgb(244, 158, 113);
+    color: white;
+}
+.website {
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    padding: 30px 10px;
+}
+.website img{
+    background-color:  rgb(98, 47, 0 );
+    border-radius: 50%;
+}
+.website a {
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    background-color:  rgb(98, 47, 0 );
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition-duration: 0.5s;
+    cursor: pointer;  
+}
+.website a:hover {
+    background-color: rgb(244, 158, 113);
+    color: rgb(255, 255, 255);
+}
+.game {
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    padding: 30px 10px;
+}
+.game img{
+    background-color:  rgb(98, 47, 0 );
+    border-radius: 50%;
+}
+.game a {
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    background-color:  rgb(98, 47, 0 );
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition-duration: 0.5s;
+    cursor: pointer;  
+}
+.game a:hover {
+    background-color: rgb(244, 158, 113);
+    color: rgb(255, 255, 255);
+}
+.fasilitas {
+    padding: 20px 20px;
+}
+.fasilitas img {
+   padding-left: 1000px;
+   width: 30%;
+}
+.fasilitas a {
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    background-color:  rgb(98, 47, 0 );
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition-duration: 0.5s;
+    cursor: pointer;  
+}
+.fasilitas a:hover {
+    background-color: rgb(244, 158, 113);
+    color: rgb(255, 255, 255);
+}
+.testi {
+    padding:10% 10%;
+    background-color: rgb(244, 158, 113);
+    color: rgb(255, 255, 255);
+}
+#testi1 {
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 50px 100px;
+}
+#testi2 {
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 50px 100px;
+}
+#testi3 {
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 50px 100px;
+}
+.sinau {
+    background-color: rgb(244, 158, 113);
+    color: rgb(255, 255, 255);
+    padding: 90px 1px;
+    text-align: center;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+.sinau a {
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    border: 5%;
+    border-color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition-duration: 0.5s;
+    cursor: pointer;  
+}
+.sinau a:hover {
+    background-color:  rgb(98, 47, 0 );
+    color: rgb(255, 255, 255);
+}
+.logo-email {
+    padding: 20px 100px;
+    margin-top: 20px;
+}
+.logo-email img {
+    width: 29%;
+    padding-top: 20px;
+}
+.logo-email form {
+        input[type=text], select { 			
+        width: 25%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }      
+}
+.logo-email a {
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    border: 5%;
+    background-color:  rgb(98, 47, 0 );
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+    transition-duration: 0.5s;
+    cursor: pointer;  
+}
+/* .daftar {
+    
+} */
+.daftar ul {		
+    list-style-type: none;
+    margin: 20px 50px;
+    padding: 0;
+    overflow: hidden;
+}
+.daftar li {
+    float: right;
+    padding: 20px 30px;
+}
+.home ul {		
+    list-style-type: none;
+    margin: 20px 50px;
+    padding: 0;
+    overflow: hidden;
+}
+.home li {
+    float: left;
+    padding: 20px 30px;
+}
+.sosial ul {		
+    list-style-type: none;
+    margin: 20px 50px;
+    padding: 0;
+    overflow: hidden;
+}
+.sosial li {
+    float: left;
+    padding: 20px 30px;
+}
+.lainnya ul {		
+    list-style-type: none;
+    margin: 20px 50px;
+    padding: 0;
+    overflow: hidden;
+}
+.lainnya li {
+    float: left;
+    padding: 20px 30px;
+}
+.keluh {
+    text-align: center;
+}

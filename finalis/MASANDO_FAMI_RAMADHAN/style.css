@@ -1,0 +1,660 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-primary);
+  /* outline: 1px solid red; */
+}
+
+:root {
+  --color-primary: #f3c0af;
+  --color-secondary: #ff7f50;
+  --color-dark: #4a2300;
+  --color-light: #fdf5e6;
+  --font-primary: 'Poppins', sans-serif;
+  --font-secondary: 'Roboto', sans-serif;
+  
+  scroll-behavior: smooth;
+}
+
+body {
+  padding-top: calc(5rem + 8px);
+}
+
+/* Components */
+
+.bg-primary {
+  background-color: var(--color-primary);
+}
+
+.bg-secondary {
+  background-color: var(--color-secondary);
+}
+
+.bg-dark {
+  background-color: var(--color-dark);
+}
+
+.bg-light {
+  background-color: var(--color-light);
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+.btn, .btn-outline {
+  display: inline-block;
+  margin-right: 8px;
+  padding: 12px 2rem;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: 0.3s ease;
+  transition-property: background-color, color;
+}
+
+:is(.btn, .btn-outline):hover {
+  font-weight: 500;
+  background-color: var(--color-secondary);
+}
+
+.btn {
+  background-color: var(--color-dark);
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--color-dark);
+  outline: 2px solid var(--color-dark);
+}
+
+.btn-outline:hover {
+  background-color: var(--color-secondary);
+  color: var(--color-light);
+  outline: none;
+}
+
+section {
+  padding: 2rem;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1128px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.card {
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 1rem;
+  border-radius: 1rem;
+  background-color: var(--color-light);
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 7px 20px 0px;
+  transition: 0.3s ease;
+  transition-property: background-color, color;
+}
+
+.card:hover {
+  background-color: var(--color-dark);
+}
+
+.card:hover * {
+  color: var(--color-light) !important;
+  outline-color: var(--color-light) !important;
+}
+
+.web-logo {
+  height: 56px;
+}
+
+.web-logo img {
+  height: 100%;
+  object-fit: cover;
+}
+
+section h2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+/* Header */
+
+header {
+  position: fixed;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 100%;
+  padding: 1rem 2rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  z-index: 99;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header ul {
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+header li {
+  padding: 12px 2rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+header a {
+  color: var(--color-dark);
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+header li.btn a {
+  color: var(--color-light);
+}
+
+header li:hover a {
+  color: var(--color-light);
+}
+
+header li:hover {
+  background-color: var(--color-dark);
+}
+
+/* Home Section */
+
+#home {
+  padding: 6rem 2rem;
+  background-image: linear-gradient(180deg, var(--color-primary), var(--color-light));
+}
+
+#home .row {
+  gap: 1rem;
+}
+
+#home :is(p, h2) {
+  font-family: var(--font-secondary);
+}
+
+#home h2 {
+  color: var(--color-secondary);
+}
+
+#home p {
+  font-size: 1.2rem;
+}
+
+#home .description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+/* Sponsor Section */
+
+#sponsor {
+  padding: 4rem;
+}
+
+#sponsor h2 {
+  color: var(--color-light);
+  text-align: center;
+}
+
+#sponsor .row {
+  justify-content: center;
+  gap: 4rem;
+  margin-top: 2rem;
+}
+
+#sponsor .col {
+  height: 60px;
+}
+
+#sponsor img {
+  object-fit: cover;
+  height: 100%;
+}
+
+/* Kategori Section */
+
+#kategori {
+  padding: 6rem 2rem;
+  font-family: var(--font-secondary);
+}
+
+#kategori h2 {
+  color: var(--color-light);
+}
+
+#kategori .container > p {
+  font-size: 1.2rem;
+  margin: 2rem 0 3rem;
+  max-width: 600px;
+  color: var(--color-light);
+}
+
+#kategori .card img {
+  height: 100px;
+  margin: 0 auto;
+}
+
+#kategori .card h3 {
+  color: var(--color-secondary);
+  font-size: 2rem;
+  text-align: center;
+}
+
+#kategori .card p {
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* Tentang Section */
+
+#tentang {
+  padding: 6rem 2rem;
+}
+
+#tentang .row {
+  gap: 4rem;
+}
+
+#tentang h2 {
+  font-weight: 600;
+}
+
+#tentang p {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+#tentang .col {
+  width: 50%;
+}
+
+#tentang .description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+#tentang .description .row {
+  margin-top: 2rem;
+  width: 100%;
+}
+
+#tentang .row h3 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+#tentang .row p {
+  font-weight: 500;
+}
+
+#tentang .description .row .col:last-child {
+  padding-left: 1rem;
+  border-left: 1px solid black;
+}
+
+#tentang .image {
+  display: flex;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+#tentang img {
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Pembelajaran Section */
+
+#pembelajaran {
+  padding: 6rem 2rem;
+}
+
+#pembelajaran h2 {
+  color: var(--color-light);
+}
+
+#pembelajaran .container > p {
+  font-size: 1.2rem;
+  margin: 2rem 0 3rem;
+  max-width: 600px;
+  color: var(--color-light);
+}
+
+#pembelajaran .card i {
+  height: 100px;
+  width: 100px;
+  position: relative;
+  border-radius: 50%;
+  background-color: var(--color-dark);
+  margin: 0 auto;
+}
+
+#pembelajaran .card img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 50%;
+}
+
+#pembelajaran .card h3 {
+  color: var(--color-secondary);
+  font-size: 2rem;
+  text-align: center;
+}
+
+#pembelajaran .card p {
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* Metode Section */
+
+#metode {
+  padding: 6rem 2rem;
+}
+
+#metode h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+#metode .row {
+  gap: 2rem;
+}
+
+#metode .container > .row > .col {
+  width: 50%;
+}
+
+#metode .image img {
+  width: 100%;
+}
+
+#metode .description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+#metode .description .row {
+  align-items: flex-start;
+}
+
+#metode span {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--color-dark);
+}
+
+/* Klien Section */
+
+#klien {
+  padding: 6rem 2rem;
+}
+
+#klien h2 {
+  font-size: 2rem;
+}
+
+#klien h3 {
+  font-size: 1.5rem;
+}
+
+#klien .description p {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+#klien .description {
+  color:  var(--color-light);
+  width: 40%;
+}
+
+#klien .row {
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+#klien .carousel {
+  width: 60%;
+  background-color: var(--color-light);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 7px 20px 0px;
+
+}
+
+#klien .carousel .item {
+  display: flex;
+  min-width: 80%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  scroll-snap-align: start;
+  padding: 3rem;
+}
+
+#klien .carousel .item i {
+  height: 100px;
+  width: 100px;
+  position: relative;
+  border-radius: 50%;
+  background-color: var(--color-dark);
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+#klien .carousel .item img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+}
+
+#klien .carousel .item p {
+  position: relative;
+  font-weight: 500;
+  text-align: center;
+}
+
+#klien .carousel .item p::before {
+  content: '"';
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+#klien .carousel .item p::after {
+  content: '"';
+  position: absolute;
+  bottom: -40px;
+  right: 0;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+/* Other Section  */
+
+#other {
+  padding: 6rem 2rem;
+}
+
+#other h2 {
+  font-size: 2.5rem;
+}
+
+#other a {
+  font-size: 1.5rem;
+  outline-color: var(--color-light);
+}
+
+#other a:hover {
+  background-color: var(--color-dark);
+}
+
+#other .container {
+  background-color: var(--color-secondary);
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+#other .container * {
+  color: var(--color-light);
+}
+
+/* Footer Section */
+
+footer {
+  padding: 3rem 4rem 0;
+  background-color: #fbedea;
+}
+
+footer .row {
+  gap: 3rem;
+}
+
+footer .web-logo {
+  height: 60px !important;
+}
+
+footer li a {
+  color: black;
+}
+
+footer > .row > .col {
+  width: 50%;
+}
+
+footer .description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3rem;
+}
+
+footer .description p {
+  font-weight: 500;
+}
+
+footer .description form {
+  width: 80%;
+  height: 3rem;
+  position: relative;
+  font-size: 2rem;
+  border-radius: 2rem;
+  overflow: hidden;
+  border: 1px solid black;
+}
+
+footer .description form input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-size: 1rem;
+  padding: 8px 1rem;
+}
+
+footer .description form input::placeholder {
+  color: var(--color-dark);
+}
+
+footer .description form button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  padding: 0 2rem;
+  border-radius: 2rem;
+  border: none;
+  color: var(--color-light);
+  background-color: var(--color-dark);
+}
+
+footer > .row > .links {
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  align-items: flex-start;
+}
+
+footer ul {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+footer li.title {
+  width: 100%;
+  padding-bottom: 8px;
+  border-bottom: 2px solid black;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+footer .foot {
+  margin-top: 3rem;
+  width: 100%;
+  padding: 2rem;
+  border-top: 1px solid black;
+}
+
+footer .foot p {
+  text-align: center;
+}

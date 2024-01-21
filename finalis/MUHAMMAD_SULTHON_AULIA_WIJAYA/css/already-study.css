@@ -1,0 +1,22 @@
+.already-study {
+  background-color: var(--primary);
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.already-study__title {
+  font-size: 3rem;
+  margin-bottom: 0.3rem;
+  color: white;
+}
+
+.already-study__description {
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.already-study__cards {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+}

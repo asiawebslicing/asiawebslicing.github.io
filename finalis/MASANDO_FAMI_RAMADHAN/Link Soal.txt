@@ -1,0 +1,12 @@
+Figma
+https://www.figma.com/proto/8t5OnykgRUSgC6vokqeLU0/Soal-Final-2?type=design&t=B4HM8FyP2t3geuh1-1&scaling=min-zoom&page-id=0%3A1&node-id=6-2201&starting-point-node-id=6%3A2201&show-proto-sidebar=1&mode=design
+
+Ketentuan Umum
+• Babak penyisihan dilakukan secara online dari lokasi masing-masing
+• Peserta hanya diperbolehkan menggunakan HTML, CSS, JavaScript
+• Masing-masing peserta akan mengerjakan sesuai desain yang di berikan
+• Desain web ditentukan oleh panitia
+• Desain akan dibagikan 10 manit sebelum pengerjaan
+• Desain dapat diakses melalui Figma atau Browser masing-masing peserta
+• Waktu pengerjaan maksimal 4 jam
+• Peserta Bebas menggunakan IDE pendukung seperti Visual Studio Code, Sublime Text atau yang lainnya

@@ -1,0 +1,560 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Plus Jakarta Sans");
+:root {
+--header-height: 3rem;
+--hue: 45;
+--sat: 98%;
+--font-bold: 700;
+--z-tooltip: 10;
+--z-fixed: 100;
+}
+*, ::before, ::after {
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+}
+html {
+scroll-behavior: smooth;
+}
+body {
+    font-family:'Plus Jakarta Sans', sans-serif;
+    transition: .5s;
+    font-size: 1rem;
+}
+h1, h2, h3 {
+line-height: 1.5;
+}
+ul {
+list-style: none;
+}
+a {
+text-decoration: none;
+}
+img {
+max-width: 100%;
+height: auto;
+}
+.grid {
+display: grid;
+gap: 1.5rem;
+}
+.flex{
+    display: flex;
+}
+/* media query */
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+    }
+    @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    }
+
+/* header & nav */
+.header {
+    width: 100%;
+    background-color: #10193F;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    transition: .5s;
+    padding: 0.5rem;
+    border-bottom: 1px solid white;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 8rem;
+    padding-right: 8rem;
+}
+.nav__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1.5rem;
+    white-space: nowrap;
+}
+.nav__link, .nav__logo, .nav__toggle {
+    font-family: 'Poppins';
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: 0.2s;
+}
+.nav__link{
+    padding: 1rem;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+}
+.nav__link:hover{
+    font-size: 1rem;
+    color: white;
+    background-color: #09AFF4;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.nav__logo img{
+    padding-top: 0.9rem;
+    width:15rem;
+}
+.nav__toggle {
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+@media screen and (min-width: 767px) {
+body {
+    margin: 0;
+}
+.nav {
+    height: calc(var(--header-height) + 1.5rem);
+}
+.nav__list {
+    flex-direction: row;
+    column-gap: 2rem;
+}
+.nav__toggle {
+    display: none;
+}
+}
+.flex{
+    display: flex;
+    gap: 4rem;
+}
+
+/* home */
+.home {
+    content: "";
+    overflow: auto;
+    background-image: linear-gradient(to bottom right, rgba(18, 25, 67), rgba(40, 26, 108));
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 9rem;
+}
+.home .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    gap: 3rem;
+}
+.home-desc{
+    gap: 2rem;
+    flex-direction: column;
+}
+.home-banner{
+   margin-left: auto; 
+   margin-right: auto;
+}
+.home .content h1{
+    font-size: 2.5rem;
+    line-height: 4rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+.home .content h1 span{
+    color: #09AFF4;
+}
+.home .content h5{
+    letter-spacing: 3px;
+    font-weight:  600;
+    color: #09AFF4;
+}
+
+.home ul {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.home-icon {
+    width: 1.5rem;
+}
+.home .content p{
+    font-size: 1.2rem;
+    color: #BABBC3;
+}
+
+/* sponsor */
+.sponsor{
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    background-color: #09AFF4;
+    color: #ffff;
+    margin:0;
+    padding: 3rem;
+}
+.sponsor .flex{
+    gap: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sponsor h1{
+    text-align: center;
+    font-weight: 600;
+}
+.sponsor .card{
+    margin-top: 1.5rem;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    width: fit-content;
+}
+.sponsor .card img{
+    background-color: white;
+    height: 4rem;
+}
+
+/* harga */
+
+.btn-outline{
+    padding: 0.7rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    font-size: 1rem;
+    color: white;
+    background-color: #09AFF4;
+    border-radius: 0.5rem;
+    border: none;
+    font-family: 'Poppins';
+    cursor: pointer;
+    white-space: nowrap;
+    transition: 0.1s;
+}
+
+.harga{
+    padding: 7rem;
+    background-color:#060922;
+    color: white;
+    display: flex;
+    justify-content:;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+.harga__content{
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 2rem;
+}
+
+.harga__header{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start
+}
+.harga h5{
+    letter-spacing: 3px;
+    font-weight:  600;
+    color: #09AFF4;
+}
+.harga h1{
+    margin-top: 1rem;
+    letter-spacing: 2.5px;
+    font-weight:  600;
+    font-size: 2rem;
+}
+
+.harga p{
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+    color: #BABBC3;
+}
+.card-harga {
+    display: flex;
+    padding: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow:1; 
+    border: 3px solid #09AFF4;
+    border-radius: 0.5rem;
+    transition: 0.6s;
+    gap: 2rem;
+}
+.card-harga ul {
+    display: flex;
+    flex-direction: column;
+    flex-grow:1; 
+    gap: 1.7rem;
+    text-align: start;
+}
+.card-harga img {
+    height: 5rem;
+}
+.card-harga:hover {
+    cursor: pointer;
+    display: flex;
+    padding: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow:1; 
+    background-color: #09AFF4;
+    border: 3px solid #09AFF4;
+    border-radius: 0.5rem;
+
+    .btn-outline{
+        padding: 0.5rem;
+        padding-right: 2.8rem;
+        padding-left: 2.8rem;
+        font-size: 1rem;
+        border: 3px solid white;
+    }
+}
+.card-harga ul li{
+    font-size: 0.9rem;
+    white-space: nowrap;
+}
+.card-harga h4{
+    font-size: 1.3rem;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.card-harga h2{
+    font-size: 2.3rem;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+
+/* kualitas */
+.kualitas {
+    background-color:#2A1A70;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7rem;
+    text-align: center;
+}
+.kualitas-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow:1;
+    gap: 6rem;
+    padding: 2rem;
+    background-color: #10193F;
+    border-radius: 0.5rem;
+}
+    
+.kualitas h2 {
+    text-align: start;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+    
+/* footer */
+footer {
+    border-top: 1px solid white;
+    background-color: #10193F;
+    color: #ffff;
+    padding: 5rem;
+    padding-bottom: 2rem;
+}
+footer p{
+    margin-top: 1.5rem;
+}
+footer .col-5{
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+footer h5{
+    font-family: 'Poppins', sans-serif;
+    margin-top: 0.7rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #09AFF4;
+
+}
+.footer__header{
+    font-family: 'Poppins', sans-serif;
+    color: #09AFF4;
+    white-space: nowrap;
+    font-weight: 600;
+    border-bottom: 2px solid #09AFF4;
+    margin-bottom: 2rem;
+}
+.footer__header .col-4{
+    margin-bottom: 1.5rem;
+}
+.footer__content ul li{
+    margin-top: 1.5rem;
+    white-space: nowrap;
+}
+.footer__content{
+    margin-bottom: 5rem;
+}
+.footer__logo{
+    width: 20rem;
+}
+.footer__container{
+    border-bottom:2px solid white;
+}
+.footer__cr{
+    border-top: 2.5px solid #09AFF4;
+    color: #09AFF4;
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    font-family: 'Poppins';
+}
+.input-group{
+    display: flex;
+    gap: 1.3rem;
+}
+.input {
+    padding: 1rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    font-size: 1rem;
+    background-color: #ffff;
+    border-radius: 0.5rem;
+    border: 0.5px solid #09AFF4;
+    font-family: 'Poppins';
+    width: 20rem;
+}
+.btn-primary{
+    padding: 1rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    font-size: 1rem;
+    color: white;
+    background-color: #09AFF4;
+    border-radius: 0.5rem;
+    border: none;
+    font-family: 'Poppins';
+    cursor: pointer;
+    white-space: nowrap;
+    transition: 0.3s;
+}
+.btn-primary:hover{
+    padding: 0.9rem;
+    padding-right: 2.9rem;
+    padding-left: 2.9rem;
+    background-color: #10193F;
+    border: 3px solid #09AFF4;
+}
+
+/* tentangkami */
+.tentangkami{
+    padding: 7rem;
+    background-color: #2A1A70;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    color: white;
+    gap: 2rem;
+}
+.tentangkami h5{
+    letter-spacing: 3px;
+    font-weight:  600;
+    color: #09AFF4;
+}
+.tentangkami h1{
+    margin-top: 1rem;
+    letter-spacing: 2.5px;
+    font-weight:  600;
+    font-size: 2rem;
+}
+.tentangkami p{
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+    color: #BABBC3;
+}
+.desc-content{
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 2rem;
+}
+.desc-content2{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.desc-item{
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1rem;
+}
+.desc-item p{
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: #BABBC3;
+}
+.desc-item h1{
+    margin-top: -1px;
+    font-size: 2.2rem;
+    color: #09AFF4;
+}
+.desc-item h6{
+    font-size: 1.2rem;
+}
+.desc-item i{
+    height:70px;
+    width: 100px;
+    background-color: #204798;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+}
+.btn-outline2{
+    padding: 0.7rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    font-size: 1rem;
+    color: #09AFF4;
+    background-color: #060922;
+    border-radius: 0.5rem;
+    border: 3px solid #09AFF4;
+    font-family: 'Poppins';
+    cursor: pointer;
+    white-space: nowrap;
+    transition: 0.2s;
+}
+.btn-outline2:hover{
+    background-color: #09AFF4;
+    color: white;
+}

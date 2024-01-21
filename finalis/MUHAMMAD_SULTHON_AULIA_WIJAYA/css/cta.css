@@ -1,0 +1,30 @@
+.cta {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: var(--background-secondary);
+}
+
+.cta__content {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary);
+}
+
+.cta__title {
+  font-size: 2rem;
+  color: white;
+}
+
+.cta__btn {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.cta__btn:hover {
+  background-color: var(--secondary) !important;
+  color: white;
+}

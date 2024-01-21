@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,700;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins';
+}
+
+/* navbar */
+
+nav .logo{
+    margin-top: 20px;
+}
+
+nav{
+    background-color: white;
+    display: flex;
+    height: 80px;
+    padding-bottom: 20px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    width: 40%;
+    justify-content: space-between;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 1.0rem;
+    color: black;
+}
+nav ul li a:hover{
+    color: rgb(255, 255, 255);
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+nav ul li  span{
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 10px;
+}
+nav ul li  span:hover{
+    transition: 0.3s;
+    background-color: rgb(255, 179, 3);
+
+}
+
+.toggle{
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+}
+
+.toggle span{
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: black;
+    border-radius: 3px;
+}
+
+/* hero */
+.hero .content{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(0deg,rgb(241, 233, 224)3%,rgba(241, 143, 23, 0.478));
+    padding: 1.4rem 6%;
+}
+
+.hero .content .content-1 h1{
+    font-size: 3em;
+    color: rgb(255, 141, 1);
+}
+.hero .content .content-1 p{
+    font-size: 1.4em;
+    margin-top: 1rem;
+}
+.hero .content .content-1 .cta{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    background: rgb(103, 24, 24);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* sponsor */
+.sponsor{
+    padding: 50px;
+    background: rgb(66, 16, 16);
+    color: white;
+ 
+ 
+}
+.sponsor h1{
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 2.9rem;
+ 
+}
+.sponsor-2 {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+/* kelas */
+.kelas{
+    padding: 10rem ;
+    background-color: #FF9843;
+}
+
+.kelas h2{
+    font-size: 3em;
+    color: white;
+    margin-bottom: 1rem;
+}
+.kelas p{
+    color: white;
+    letter-spacing: 2px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 50px;
+    grid-gap: 30px;
+}
+
+.grid > article{
+    background-color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-radius: 10px;
+}
+
+article img{
+    margin-left: 110px;
+}
+
+article:hover{
+    background-color: rgb(84, 31, 31);
+    transition: 0.2s;
+    color: white;
+}
+
+.konten h3{
+    color: #FF9843;
+    text-align: center;
+    margin: 20px;
+    font-size: 1.6rem;
+
+}
+.konten p{
+    color: black;
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+.konten a{
+    color: black;
+    text-decoration: none;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 100px;
+}
+
+
+/* pelatihan  */
+
+.pelatihan .row{
+    display: flex;
+    padding: 100px;
+}
+
+.pelatihan .row .about-img img{
+    flex:1 1 45rem;
+    border-image: 10px;
+    border-radius: 20px;
+
+}
+.konten-pelatihan h3{
+    letter-spacing: 3px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 2.7rem;
+}
+
+.row-2{
+    display: flex;
+    justify-content: space-around;
+    font-family: sans-serif;
+}
+
+
+.dua{
+    border-left: 1px solid;
+    padding-left:20px;
+}
+
+/* end */
+
+/* fasilitas */
+.cta-2{
+    position: absolute;
+    padding: 20px;
+    background: rgb(104, 26, 26);
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+/* tagline */
+
+/* sponsor */
+.tagline{
+    padding: 100px;
+    background: wheat;
+    color: white;
+ 
+ 
+}
+
+.sponsor-aja {
+    background: #f87c17;
+    padding: 50px;
+    font-size: 1.4rem;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.icon-2 a{
+    color: white;
+    border: 2px solid white;
+    padding: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+/* footer */
+.footer{
+    background-color: rgba(217, 211, 211, 0.62);
+    padding: 70px ;
+    bottom: 0;
+    display: flex;
+}
+
+.footer-col img{
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.email{
+    margin-top: 20px;
+    border: 2px solid;
+    border-radius: 80px;
+    width: 400px;
+    padding: 20px;
+}
+
+.email a{
+    text-decoration: none;
+    color: black;
+}
+.footer-col ul{
+    list-style-type: none;
+}
+
+.footer-col a{
+    text-decoration: none;
+    padding: 20px;
+}
+
+
+
+
+
+
+
+
+/* responsive */
+
+/* tab */
+@media only screen and (max-width:768px) {
+    nav ul{
+        width: 50%;
+    }
+    
+}
+
+/* mobile */
+@media only screen and (max-width:576px) {
+
+    .toggle{
+        display: flex;
+    }
+
+    nav ul{
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 50%;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        justify-content: space-evenly;
+        background-color: rgba(0, 0, 0, 0.194);
+        z-index: -1;
+        transform: scaleX(100%);
+        transition: all 1s;
+        opacity: 0;
+    }
+
+    nav ul.slide{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

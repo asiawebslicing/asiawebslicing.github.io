@@ -1,0 +1,24 @@
+.introduction {
+  background-color: #ffe3da;
+  /* background-color: linier-gradient(#f6ccbe); */
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.introduction > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.introduction__title {
+  color: var(--primary);
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.introduction__desc {
+  margin-bottom: 2rem;
+}

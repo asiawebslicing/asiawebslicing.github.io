@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    justify-content: space-between;
+    /* position: absolute; */
+    padding: 10px 80px 10px 80px;
+    display: flex;
+    left: 0;
+    top: 0;
+    color: whitesmoke;
+    width: 100%;
+    align-items: center;
+}
+
+ul{
+    list-style: none;
+}
+
+.nav-links{
+    display: flex;
+}
+.nav-links li{
+    margin: 0 20px;
+}
+
+.nav-links a{
+text-decoration: none;
+color: #b1b1b1;
+font-size: 19px;
+}
+
+
+/* header */
+header{
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    margin: auto;
+    /* background-position: center; */
+    display: flex;
+}
+
+.pertama{
+    background-image: url(image/image13.png);
+  color: whitesmoke;
+}
+
+.content{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.content .satu{
+    font-size: 43px;
+}
+
+.content p{
+padding-left: 200px;
+padding-right: 200px ;
+margin-top: 20px;
+margin-bottom: 20px;
+font-size: 18px;
+}
+
+.content .row{
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+}
+
+.button{
+    padding: 12px 17px;
+    margin: 10px;
+    border-radius: 8px;
+    border: none;
+    color: whitesmoke;
+    background: #5db3c0 ;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* section sponsor */
+
+.sponsor h1{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: whitesmoke;
+    font-size: 35px;
+    margin-bottom: 12px;
+}
+
+
+.isi{
+    background: #22263f;
+    padding: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.isi-sponsor{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.isi-sponsor .col{
+    padding: 10px;
+}
+
+.sponsor .row{
+    display: flex;
+}
+
+.bt2{
+    padding: 12px 17px;
+    margin: 10px;
+    border-radius: 8px;
+    border: none;
+    background: whitesmoke ;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* section kedua */
+.kedua{
+    width: 100%;
+    height: 100vh;  
+background-size: cover;
+background-position: center;
+}
+
+.kedua .row{
+    display: flex;
+}
+
+.kedua .column{
+    padding: 10px;
+}
+
+.isi-kedua{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+        padding: 60px;
+        
+}
+
+.row .text-atas{
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.row .text-bawah{
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+
+.bt3{
+    padding: 20px 30px;
+    margin: 10px;
+    border-radius: 8px;
+    border: none;
+    background: #22263f ;
+    font-size:20px;
+    color: whitesmoke;
+}
+
+.column .row .col{
+}
+
+
+
+
+ /* keempat */ 
+ .keempat{ 
+    display: flex;
+background-color: #5db3c0;
+    width: 100%; 
+    height: 100vh; 
+    align-items: center; 
+    justify-content: center; 
+    color: whitesmoke; 
+ }
+ 
+ .kartu{
+    width: 100%;
+    max-width: 300px;
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+    overflow: hidden; 
+    justify-content: center; 
+    border-radius: 8px;
+    /* display: grid; */
+    /* grid-template-columns: repeat(auto-fit,minmax(20px,auto)); */
+}
+
+ .kontent{
+  display: flex;
+  justify-content: space-around; 
+  align-items: center; 
+  height: 100vh;
+  padding: 30px;
+  } 
+  
+ 
+ 
+ .isi-dua{ 
+  padding: 20px;
+ font-size: 20px; 
+ background: whitesmoke; 
+ color: black;
+ text-align: center;
+ font-weight: bold;
+} 
+
+
+
+.title { 
+    text-align: center; 
+    display: flex;
+} 
+
+.title h1{
+     text-align:center;
+    justify-content: center; 
+    margin-top: 8px; } 
+ 
+
+
+
+
+.kelima{
+    display: flex;
+    background-color: #22263f;
+        width: 100%; 
+        height: 100vh; 
+        align-items: center; 
+        justify-content: center; 
+        color: whitesmoke;  
+}
+
+.containner{
+    display: flex;
+  justify-content: space-around; 
+  align-items: center; 
+  height: 100vh;
+  padding: 30px;
+}
+
+.kartuu{
+    width: 100%;
+    max-width: 300px;
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+    overflow: hidden; 
+    justify-content: center; 
+    border-radius: 8px;
+    background: whitesmoke;
+    color: black;
+    padding: 100px;
+}

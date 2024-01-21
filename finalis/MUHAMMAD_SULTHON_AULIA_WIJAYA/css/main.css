@@ -1,0 +1,121 @@
+:root {
+  --background-primary: #ffccbc;
+  --background-secondary: #fdf5e6;
+  --primary: #fc8159;
+  --secondary: #4c2404;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+  font-family: Poppins, sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  color: black;
+}
+
+.container {
+  max-width: 1320px;
+  width: 100%;
+  padding: 0 2rem;
+  margin: auto;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 0.8rem 1.8rem;
+  border-radius: 0.5rem;
+  transition: all 0.4s ease;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn.btn-primary {
+  background-color: var(--secondary);
+  color: white;
+  font-weight: 600;
+}
+
+.btn.btn-primary:hover {
+  background-color: var(--primary);
+  cursor: pointer;
+}
+
+.btn.btn-outline {
+  border: 3px solid var(--secondary);
+}
+
+.btn.btn-outline-white {
+  border: 3px solid white;
+}
+
+.btn.btn-outline-white:hover {
+  cursor: pointer;
+  border: 3px solid var(--primary);
+  background-color: var(--primary);
+}
+
+.btn.btn-nav:hover {
+  cursor: pointer;
+  color: white;
+  background-color: var(--secondary);
+}
+
+.btn.btn-outline-white {
+  border: 3px solid white;
+  color: white;
+}
+
+.card {
+  background-color: var(--background-secondary);
+  padding: 2.7rem 2rem;
+  text-align: center;
+  border-radius: 1rem;
+  transition: all 0.29s ease-in;
+}
+
+.card__icon {
+  background-color: var(--secondary);
+  width: 2rem;
+  padding: 2rem;
+  height: 2rem;
+  margin: auto;
+  border-radius: 100%;
+  margin-bottom: 2rem;
+}
+
+.card__icon img {
+  margin: auto;
+  height: 100%;
+}
+
+.card__img {
+  height: 5rem;
+  width: auto;
+}
+
+.card-hover {
+  background-color: var(--secondary);
+  color: white;
+}
+
+.card__title {
+  font-size: 2rem;
+  margin-bottom: 1.3rem;
+}
+
+.card__description {
+  margin-bottom: 1.5rem;
+}

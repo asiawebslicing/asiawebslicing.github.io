@@ -1,0 +1,72 @@
+.testimoni {
+  background-color: var(--primary);
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.testimoni > div {
+  display: flex;
+}
+
+.testimoni__title {
+  font-size: 2rem;
+  color: white;
+}
+
+.testimoni__desc {
+  color: white;
+}
+
+.testimoni__container {
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  width: 100%;
+  background-color: var(--background-secondary);
+}
+
+.testimoni__cards {
+  display: flex;
+  width: 100%;
+  gap: 5rem;
+  width: max-content;
+  align-items: center;
+}
+
+.testimoni__card {
+  padding: 1rem 0;
+  max-width: 40rem;
+  width: 100%;
+  text-align: center;
+}
+
+.testimoni__card__img {
+  width: 3rem;
+  height: 3rem;
+  margin-bottom: 2rem;
+}
+
+.testimoni__card__title {
+  margin-bottom: 1rem;
+}
+
+.testimoni__card__description {
+  position: relative;
+}
+
+.testimoni__card__description::before {
+  position: absolute;
+  content: '"';
+  font-size: 3rem;
+  font-weight: 600;
+  top: -1rem;
+  left: -0.7rem;
+}
+
+.testimoni__card__description::after {
+  position: absolute;
+  content: '"';
+  font-size: 3rem;
+  font-weight: 600;
+  bottom: -3rem;
+  right: -0.7rem;
+}

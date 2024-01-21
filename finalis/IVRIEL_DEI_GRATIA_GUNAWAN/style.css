@@ -1,0 +1,613 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+.logo-nav {
+    width: 250px;
+    height: 60px;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 15px;
+    background-color: rgb(3, 3, 56);
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
+}
+ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+ul a {
+    color: white;
+    text-decoration: none;
+    font-family: Courier Std,sans-serif;
+    line-height: 20px;
+}
+li {
+    line-height: 50px;
+}
+.box-reguler {
+    border-radius: 6px;
+    background-color: rgb(3, 3, 56);
+    padding: 10px 20px 10px 20px;
+    transition: 0.3s;
+}
+.box-reguler:hover {
+    background-color: rgb(54, 171, 255);
+    cursor: pointer;
+    transition: 0.3s;
+}
+ .why-us {
+    background-color: rgb(54, 171, 255);
+    border-radius: 8px;
+    width: 170px;
+    height: 50px;
+    text-align: center;
+    margin-top: 10px;
+}
+#it-service {
+background-color: rgb(10, 10, 71);
+height: 900px;
+}
+.content-flex-it {
+    display: flex;
+    padding-top: 250px;
+}
+.icon-sosial {
+    width: 20px;
+    height: 20px;
+}
+.info-it {
+    margin-left: 90px;
+}
+.icon-sosial-update {
+    width: 25px;
+    height: 20px;
+}
+.info-it ul {
+    margin-bottom: 20px;
+}
+.info-it span {
+    color: rgb(54, 171, 255);
+    font-family: Inter,sans-serif;
+    font-weight: bold;
+}
+.info-it h1 {
+    color: white;
+    font-family: Inter, sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    margin-top: 20px;
+}
+.info-it p {
+    color: grey;
+    font-family: Inter,sans-serif;
+    font-weight: bold;
+    margin-top: 30px;
+    font-size: 20px;
+}
+.info-it button {
+    background-color: rgb(54, 171, 255);
+    border-radius: 8px;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+    border: none;
+    font-family: Inter,sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 30px;
+    transition: 0.3s;
+}
+.info-it button:hover {
+    border: 1px solid rgb(54, 171, 255);
+    background-color: rgb(10, 10, 71);
+    cursor: pointer;
+    transition: 0.3s;
+}
+#sponsor {
+    background-color: rgb(54, 171, 255);
+    height: 260px;
+}
+#sponsor h1 {
+    color: white;
+    text-align: center;
+    font-family: Inter,sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    padding-top: 40px;
+}
+.sponsor-list {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+.cakap {
+    width: 230px;
+    height: 70px;
+    padding-left: 20px;
+    padding-top: 15px;
+}
+.dicoding {
+    width: 230px;
+    height: 70px;
+    padding-left: 20px;
+    padding-top: 15px;
+}
+.cakap-container {
+    background-color: white;
+    width: 270px;
+    height: 100px;
+    border-radius: 10px;
+}
+.dicoding-container {
+    background-color: white;
+    width: 270px;
+    height: 100px;
+    border-radius: 10px;
+}
+#service {
+    background-color: rgb(2, 2, 36);
+    border-bottom: 1px solid white;
+    height: 1000px;
+}
+.information-service {
+    margin-left: 70px;
+}
+.content-flex-service {
+    display: flex;
+    padding-top: 100px;
+}
+.information-service span {
+    color: rgb(54, 171, 255);
+    font-family: Inter,sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.information-service h1 {
+    color: white;
+    font-family: Inter,sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    margin-top: 20px;
+}
+.information-service p {
+    color: grey;
+    font-family: Inter,sans-serif;
+    font-size: 20px;
+    margin-top: 30px;
+}
+.button-service button {
+    background-color: rgb(2, 2, 36);
+    border-radius: 8px;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    margin-top: 10px;
+    color: rgb(42, 166, 255);
+    border: 2px solid rgb(42, 166, 255);
+    font-family: Inter,sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 30px;
+    transition: 0.3s;
+}
+.button-service {
+    margin-left: 450px;
+    margin-top: 30px;
+}
+.button-service button:hover {
+    background-color: rgb(42, 166, 255);
+    color: white;
+    transition: 0.3s;
+}
+.boxes-service {
+    display: flex;
+    margin-top: 150px;
+    margin-left: 70px;
+    gap: 15px;
+}
+.boxes-service-2 {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 70px;
+    gap: 15px;
+}
+.box-service img {
+    width: 50px;
+    height: 50px;
+}
+.box-service {
+    font-family: Inter,sans-serif;
+    border: 2px solid rgb(42, 166, 255);
+    padding: 20px 40px 20px 20px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+.box-service:hover {
+    background-color: rgb(54, 171, 255);
+    fill: white;
+    color: white;
+    transition: 0.3s;
+    cursor: normal;
+}
+.box-service h1{
+color: white;
+font-weight: bold;
+font-size: 25px;
+margin-top: 25px;
+}
+.box-service p {
+    color: grey;
+    font-size: 18px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.box-service span {
+    color: grey;
+    font-size: 18px;
+    margin-top: 25px;
+}
+#about-us {
+    background-color: rgb(57, 30, 137);
+    height: 850px;
+    border-bottom: 1px solid white;
+}
+.content-flex-about-us {
+    display: flex;
+    padding-top: 150px;
+}
+.information-about {
+    margin-left: 70px;
+    font-family: Inter,sans-serif;
+}
+.information-about span {
+    color: rgb(54, 171, 255);
+    font-weight: bold;
+    font-size: 20px;
+}
+.information-about h1 {
+    color: white;
+    font-size: 40px;
+    margin-top: 20px;
+}
+.information-about p {
+    color: grey;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.icons-about {
+    display: flex;
+    margin-top: 80px;
+    gap: 20px;
+}
+.icons-about-2 {
+    display: flex;
+    margin-top: 20px;
+    gap: 20px;
+}
+.icon img {
+    width: 50px;
+    height: 50px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.icon-container {
+    background-color: rgb(0, 42, 255);
+    width: 70px;
+    height: 70px;
+    border-radius: 6px;
+}
+.icon {
+    display: flex;
+    font-family: Inter,sans-serif;
+    gap: 10px;
+}
+.icons-about h1 {
+    font-size: 20px;
+}
+.icons-about p {
+    color: grey;
+    font-size: 14px;
+    margin-top: -1px;
+}
+.icons-about-2 h1 {
+    font-size: 20px;
+}
+.icons-about-2 p {
+    color: grey;
+    font-size: 14px;
+    margin-top: -1px;
+}
+.description {
+    margin-top: -10px;
+}
+.button-klien {
+    background-color: rgb(42, 166, 255);
+    border-radius: 8px;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+    font-family: Inter,sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 30px;
+    transition: 0.3s;
+    border: none;
+    margin-top: -200px;
+}
+.button-klien:hover {
+    background-color: rgb(3, 3, 56);
+    border: 2px solid rgb(0, 42, 255);
+}
+.about-image {
+    margin-top: -380px;
+    margin-left: 100px;
+}
+#purchase {
+    background-color: rgb(2, 2, 36);
+    height: 1100px;
+    border-bottom: 1px solid white;
+}
+.introduction-purchase {
+    padding-top: 100px;
+    margin-left: 40px;
+    font-family: Inter,sans-serif;
+}
+.introduction-purchase span {
+    color: rgb(42, 166, 255);
+    font-weight: bold;
+}
+.introduction-purchase h1 {
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.introduction-purchase p {
+    color:grey;
+    font-size: 21px;
+    margin-top: 20px;
+}
+.boxes-purchase {
+    display: flex;
+    margin-left: 40px;
+    margin-top: 90px;
+    gap: 20px;
+}
+.icon-purchase {
+    width: 80px;
+    height: 80px;
+}
+.box-purchase {
+    text-align: center;
+    font-family: Inter,sans-serif;
+    color: white;
+    border: 2px solid rgb(42, 166, 255);
+    border-radius: 6px;
+    padding: 40px 40px 40px 40px;
+    transition: 0.5s;
+}
+.box-purchase:hover {
+    background-color: rgb(42, 166, 255);
+    transition: 0.5s;
+}
+.box-purchase h2 {
+    font-size: 25px;
+    margin-top: 40px;
+    font-weight: bold;
+}
+.box-purchase h1 {
+    font-size: 55px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+.box-purchase p {
+    margin-top: 30px;
+}
+.box-purchase button {
+    background-color: rgb(42, 166, 255);
+    border-radius: 8px;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+    font-family: Inter,sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 30px;
+    transition: 0.3s;
+    border: none;
+    margin-top: 30px;
+}
+.content-flex-work {
+    display: flex;
+    padding-top: 100px;
+    margin-left: 80px;
+}
+#our-work {
+    background-color: rgb(57, 30, 137);
+    height: 780px;
+    border-bottom: 1px solid white;
+}
+.description-work  {
+    margin-left: 40px;
+    font-family: Courier Std,sans-serif;
+}
+.description-work span {
+    color: rgb(42, 166, 255);
+    font-weight: bold;
+}
+.description-work h1 {
+    font-weight: bold;
+    color: white;
+    font-size: 40px;
+    margin-top: 20px;
+}
+.description-work p {
+    color: rgb(194, 194, 194);
+    font-size: 20px;
+    margin-top: 20px;
+}
+.content-01 {
+    display: flex;
+    font-family: Inter,sans-serif;
+    margin-top: 40px;
+    gap: 20px;
+}
+.content-01 span {
+    color: rgb(42, 166, 255);
+    font-size: 45px;
+}
+.content-01 h5 {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.content-01 p {
+    font-size: 14px;
+    color: white;
+    margin-top: -0px;
+}
+.content-02 {
+    display: flex;
+    font-family: Inter,sans-serif;
+    margin-top: 30px;
+    gap: 20px;
+}
+.content-02 span {
+    color: rgb(42, 166, 255);
+    font-size: 45px;
+}
+.content-02 h5 {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.content-02 p {
+    font-size: 14px;
+    color: white;
+    margin-top: -0px;
+}
+.content-03 {
+    display: flex;
+    font-family: Inter,sans-serif;
+    margin-top: 30px;
+    gap: 20px;
+}
+.content-03 span {
+    color: rgb(42, 166, 255);
+    font-size: 45px;
+}
+.content-03 h5 {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.content-03 p {
+    font-size: 14px;
+    color: white;
+    margin-top: -0px;
+}
+.about-us-btn {
+    background-color: rgb(42, 166, 255);
+    border-radius: 8px;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+    font-family: Inter,sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 30px;
+    transition: 0.3s;
+    border: none;
+    margin-top: 50px;
+}
+.about-us-btn:hover {
+    background-color: rgb(3, 3, 56);
+    border: 2px solid rgb(0, 42, 255);
+}
+#review {
+    background-color: rgb(2, 2, 36);
+    height: 700px;
+    border-bottom: 1px solid white;
+}
+.content-flex-review {
+    display: flex;
+    padding-top: 100px;
+    margin-left: 70px;
+}
+.description-review {
+    font-family: Inter,sans-serif;
+}
+.description-review span {
+    color: rgb(42, 166, 255);
+}
+.description-review h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: 20px;
+}
+.description-review p {
+    color: rgb(194, 194, 194);
+    margin-top: 30px;
+    font-size: 20px;
+}
+#quality {
+    background-color: rgb(57, 30, 137);
+    height: 400px;
+}
+.container-quality {
+    display: flex;
+    font-family: Courier Std,sans-serif;
+    background-color: rgb(3, 3, 56);
+    height: 150px;
+    border-radius: 8px;
+    align-items: center;
+    padding-left: 30px;
+    width: 1100px;
+}
+.content {
+    padding-top: 200px;
+    margin-left: 90px;
+}
+.container-quality h1 {
+    color: white;
+    font-size: 30px;
+}
+.button-quality button {
+    background-color: rgb(42, 166, 255);
+    border-radius: 8px;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+    font-family: Inter,sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 30px;
+    transition: 0.3s;
+    border: none;
+    margin-left: 250px;
+}
+.button-quality button a {
+    color: white;
+    text-decoration: none;
+}
